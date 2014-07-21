@@ -1,0 +1,19 @@
+//Created by LocNT on 7/22/2014 2:43 AM.
+extends ../layout
+block content
+    .container-fluid
+        .row
+            form#loginForm(action="loginAuthen",method="post")
+                .form-control
+                    label(for="#username")="username : "
+                    input#username(type="text",name="username")
+                .form-control
+                    label(for="#password")="password : "
+                    input#password(type="password",name="password")
+                .form-control
+                    input#username(type="submit" value="login")
+                .form-control
+                    a(href="forgot")
+                        input#forgot(type="button" value="For got password")
+                    a(href="register")
+                        input#signup(type="button" value="Create account")
